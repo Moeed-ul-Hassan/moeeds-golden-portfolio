@@ -2,41 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Luxury Portfolio Design System - Black, Grey, White, and Golden Theme */
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 5%;
 
+    /* Card colors */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 5%;
 
+    /* Popover colors */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep Black */
+    --primary: 0 0% 5%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Luxury Gold */
+    --secondary: 43 89% 58%;
+    --secondary-foreground: 0 0% 5%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Light Grey */
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Gold Accent */
+    --accent: 43 89% 58%;
+    --accent-foreground: 0 0% 5%;
 
+    /* Destructive */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Border and Input */
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 43 89% 58%;
 
-    --radius: 0.5rem;
+    /* Custom Portfolio Colors */
+    --luxury-gold: 43 89% 58%;
+    --luxury-gold-dark: 43 89% 45%;
+    --luxury-gold-light: 43 89% 70%;
+    --dark-grey: 0 0% 15%;
+    --medium-grey: 0 0% 40%;
+    --light-grey: 0 0% 85%;
+    --pure-white: 0 0% 100%;
+    --deep-black: 0 0% 5%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 89% 58%) 0%, hsl(43 89% 45%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 15%) 50%, hsl(43 89% 58% / 0.1) 100%);
+
+    /* Shadows */
+    --shadow-luxury: 0 25px 50px -12px hsl(0 0% 5% / 0.25);
+    --shadow-gold: 0 10px 30px -5px hsl(43 89% 58% / 0.3);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 5% / 0.1);
+
+    /* Typography */
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +91,57 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Base colors for dark mode */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    /* Card colors */
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    /* Popover colors */
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Primary - White in dark mode */
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary - Luxury Gold */
+    --secondary: 43 89% 58%;
+    --secondary-foreground: 0 0% 5%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Muted - Dark Grey */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 85%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Accent - Gold Accent */
+    --accent: 43 89% 58%;
+    --accent-foreground: 0 0% 5%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Border and Input */
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 43 89% 58%;
+
+    /* Custom Portfolio Colors for dark mode */
+    --luxury-gold: 43 89% 58%;
+    --luxury-gold-dark: 43 89% 45%;
+    --luxury-gold-light: 43 89% 70%;
+    --dark-grey: 0 0% 85%;
+    --medium-grey: 0 0% 60%;
+    --light-grey: 0 0% 15%;
+    --pure-white: 0 0% 5%;
+    --deep-black: 0 0% 98%;
+
+    /* Dark mode gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 89% 58%) 0%, hsl(43 89% 45%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 85%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 85%) 50%, hsl(43 89% 58% / 0.1) 100%);
   }
 }
 
@@ -100,6 +151,126 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-[var(--font-body)];
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero Gradient Background */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Gold Gradient */
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+
+  /* Dark Gradient */
+  .dark-gradient {
+    background: var(--gradient-dark);
+  }
+
+  /* Luxury Card Shadow */
+  .luxury-shadow {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  /* Gold Shadow */
+  .gold-shadow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Card Shadow */
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Smooth Transition */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Bounce Transition */
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  /* Text Gold Gradient */
+  .text-gold-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Hover Scale Effect */
+  .hover-scale {
+    @apply transition-smooth hover:scale-105;
+  }
+
+  /* Fade In Animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  /* Slide Up Animation */
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Custom Color Classes */
+  .text-luxury-gold {
+    color: hsl(var(--luxury-gold));
+  }
+
+  .bg-luxury-gold {
+    background-color: hsl(var(--luxury-gold));
+  }
+
+  .text-deep-black {
+    color: hsl(var(--deep-black));
+  }
+
+  .bg-deep-black {
+    background-color: hsl(var(--deep-black));
+  }
+
+  .text-dark-grey {
+    color: hsl(var(--dark-grey));
+  }
+
+  .bg-dark-grey {
+    background-color: hsl(var(--dark-grey));
   }
 }
