@@ -3,7 +3,6 @@
 <h1 align="center">
   Moeed ul Hassan — The Legend
   <br/>
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60" />
 </h1>
 
 <p align="center">
