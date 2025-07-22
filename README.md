@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+---
 
-## Project info
+<h1 align="center">
+  Moeed ul Hassan — The Legend
+  <br/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="60" />
+</h1>
 
-**URL**: https://lovable.dev/projects/474fb0ec-09f9-4d0e-a91d-8276fc593617
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&color=00FFA1&vCenter=true&width=500&lines=Self-Employed+Python+Backend+Developer;Crafting+AI+Apps+%7C+Smart+Dashboards+%7C+Secure+Systems" />
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+### 🧾 About Me
 
-**Use Lovable**
+* I'm **Moeed ul Hassan**, known as *The Legend* — a Python Web App Developer from Gujrat, Pakistan
+* Passionate about backend engineering, smart dashboards, and clean, scalable systems
+* **Self-Employed** and building tech solutions with purpose and power
+* Currently mastering Python, Flask, FastAPI, and automation workflows
+* Code with clarity, design with empathy, and always build with **ikhlas** (sincerity)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/474fb0ec-09f9-4d0e-a91d-8276fc593617) and start prompting.
+> "You were not born to stay small. Break the loop, build the future."
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+### 💼 What I'm Working On
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* **Inbox Shield** – AI-powered smart email firewall (Gmail + AI)
+* **Mail Hawk** – My flagship project for AI inbox security
+* **Food Rescue Network** – Tech-powered sadaqah initiative
+* **Skill Compass** – Career direction tool for Gen-Z
+* **Task Buddy** – Local services app with real-time tracking and communication
+* **Addictions Blocker** – Personal project to fight digital addiction with tech
+* **Talking Guy Fawkes Mask** – Creative hardware-integrated AI interaction project
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### ⚙️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+<img src="https://skillicons.dev/icons?i=python,flask,fastapi,js,html,css,bootstrap,tailwind,git,postgresql,sqlite" />
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+> I work comfortably with APIs, Flask/FastAPI, Gmail OAuth, Supabase, SQL systems, and automation workflows.
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Moeed-ul-Hassan&show_icons=true&theme=radical&hide=prs" width="47%">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Moeed-ul-Hassan&theme=radical" width="47%">
+</p>
+
+---
+
+### 🚀 Let's Connect
+
+* Have a backend idea that needs power & polish?
+* Want to secure your product with AI-driven features?
+* Need a system built with speed, design, and care?
+
+> 🌐 Portfolio: **[leafbloom.online](https://leafbloom.online)**
+> 💼 LinkedIn: **[linkedin.com/in/moeed-ul-hassan](https://linkedin.com/in/moeed-ul-hassan)**
+
+---
+
+### ✨ Signature Quote
+
+```js
+while (alive) {
+  code();
+  learn();
+  do_it_with_ikhlas();
+}
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/474fb0ec-09f9-4d0e-a91d-8276fc593617) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
